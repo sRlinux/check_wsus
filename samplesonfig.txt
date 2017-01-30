@@ -1,7 +1,11 @@
 # nsclient.ini
 
 [/settings/external scripts/scripts]
+allow arguments = true
 check_wsus=cmd /c echo scripts\wsus_stacking.ps1 $ARG1$; exit $lastexitcode | powershell -command -
+
+[/settings/external scripts/scripts]
+allow arguments = true
 
 #######################################################################################################
 
